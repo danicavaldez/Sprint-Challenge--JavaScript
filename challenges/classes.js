@@ -21,6 +21,11 @@ const newCuboid = new NewCuboidMaker({
   height: 5
 });
 
+class CubeMaker extends CuboidMaker {
+  constructor(cubeAttrs) {
+    super(cubeAttrs);
+  }
+}
 
 // Test your volume and surfaceArea methods by uncommenting the logs below:
 console.log(newCuboid.volume()); // 100
